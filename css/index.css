@@ -330,13 +330,140 @@ Two things needed to make a website responsive:
 
 1. You need a viewport meta tag in the head of 
    your HTML doc.
+2. Media Queries - rules that we write that apply to specific screen sizes
 
+If we are designing desktop first and scaling down to smaller screens we use 'max-width'
+If we are designing mobile first and scaling up to larger screens we use 'min-width'
 
+Building for a range of screen sizes rather than specific screen sizes which is why you should use 
+scalable units of measure instead of static units like pixels. 
 
-
+Only need to re-write the aspects of your CSS that will be changing into the media queries instead
+of having to re-style everything.
 
 */
 
+/* Media Queries */
+/*  Tablets */
+
+@media(max-width:800px){
+    /* When the screen size reaches 800px or smaller apply these styles */
+    
+    #about{
+        height: 90vh;
+        background-position: right;
+    }
+    
+    #about div {
+        width: 35%;
+        margin-right: 5%;
+    }
+
+    .text div {
+        width: 65%;
+    }
+
+
+}
+
+/* Phone */
+@media(max-width:500px){
+    /* When the screen reaches 500px or smaller apply these styles */
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+    .nav_links {
+        width: 90%;
+    }
+
+    #about{
+        background-image: none;
+        background-color: #dddee0;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #about div {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .text, .succulents, .tropicals, .cacti {
+        width: 90%;
+    }
+
+    .succulents, .tropicals, .cacti {
+        height: 40vh;
+
+    }
+
+    .one {
+        order: 1;
+    }
+
+    .two {
+        order: 2;
+    }
+
+    .three {
+        order: 3;
+    }
+
+    .four {
+        order: 4;
+    }
+
+    .five {
+        order: 5;
+    }
+
+    .six {
+        order: 6;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    .left, .right {
+        width: 90%;
+    }
+
+    .left div {
+        line-height: 1.5;
+    }
+
+    footer h2 {
+        order: -2;
+    }
+
+    .right {
+        order: -1;
+    }
+
+    .right img {
+        width: 70%;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .copyright p {
+        margin-right: 0;
+    }
+}
 
 
 
