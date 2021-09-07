@@ -106,7 +106,7 @@ section {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 /* general styles */
@@ -230,6 +230,10 @@ nav {
 
 /* Shop Section Style */
 
+#shop {
+    padding-bottom: 0;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -271,12 +275,67 @@ nav {
     background-position: center;
 }
 
+/* Footer Section Style */
+
+footer {
+    background-color: #266035;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+footer h2 {
+    color: #fff;
+    width: 100%;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 50%;
+}
+
+.left div {
+    line-height: 3;
+    width: 50%;
+}
+
+footer h3 {
+    color: #FFF;
+    text-align: left;
+}
+
+footer a {
+    color: #FFF;
+}
+
+.copyright {
+    width: 100%;
+    text-align: right;
+}
+
+.copyright p {
+    margin-right: 3%;
+    margin-top: 5%;
+}
+
+/* Responsive Design */
+/* 
+Two things needed to make a website responsive:
+
+1. You need a viewport meta tag in the head of 
+   your HTML doc.
 
 
 
 
 
-
+*/
 
 
 
